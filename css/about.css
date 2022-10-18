@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --main-color:#00B5A1;
+    --black:#000000;
+    --white:#FFFFFF;
+    --dark-white:#D1D1D1;
+    --bg-dark:#23272D;
+    --light-main-color:#00E2C9;
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: .5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+section{
+    padding: 1rem 20%;
+    margin-left: -1rem;
+    margin-top: -1rem;
+    margin-right: -1rem;
+}
+
+/*starts header design*/
+.header{
+    margin-top: 5rem;
+    display: flex;
+    background-color: none;
+    justify-content: space-between;
+    top: 0; left: 0; right: 15rem;
+    position: absolute;
+}
+
+.header .logo h1{
+    color: var(--white);
+    font-family: Lato;
+    display: inline-block;
+}
+
+.header .logo h1 span{
+    font-weight: 400;
+}
+
+.header .logo h4{
+    color: var(--dark-white);
+    font-family: Raleway;
+    font-weight: 500;
+    margin-top: -20px;
+}
+
+.header .list{
+    margin-top: 35px;
+}
+
+.header .list a{
+    color: var(--dark-white);
+    text-decoration: none;
+    font-family: Raleway;
+    margin-left: 2rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.header .list a:hover{
+    transition: .2s;
+    color: var(--main-color);
+}
+/*ends header design*/
+
+/*start about design*/
+.about-me{
+    background-color: var(--bg-dark);
+    padding-bottom: 10rem;
+    font-family: Raleway;
+}
+
+.about-me .title{
+    margin-top: 15rem;
+    font-size: 35px;
+    letter-spacing: 15px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.about-me .text{
+    color: var(--white);
+    font-weight: 400;
+    padding-right: 19rem;
+    font-size: 24px;
+}
+
+.about-me .social-links a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.about-me .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-me .container .social-links ul li{
+    list-style-type: none;
+    font-size: 24px;
+    
+}
+
+.about-me .container .social-links a{
+    color: var(--light-main-color);
+}
+
+.about-me .container .social-links i{
+    margin-right: 1rem;
+    margin-left: -1rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: var(--light-main-color);
+}
+
+.about-me .container .social-links {
+    font-family: Lato;
+    color: var(--white);
+    font-size: 34px;
+}
+
+.about-me .container .contacts hr{
+    margin-top: 4rem;
+    background-color: var(--light-main-color);
+    border: none;
+}
+
+.about-me .container .contacts h3{
+    color: var(--dark-white);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-me .container .contacts a{
+    font-family: Lato;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.about-me .container .contacts .email{
+    padding-bottom: 5rem;
+    padding-top: 4rem;
+}
+
+.about-me .container .contacts .phone a{
+    text-decoration: none;
+}
+/*end about design*/
+
+.footer{
+    background-color: var(--light-main-color);
+    height: 30rem;
+    margin-top: 0;
+    padding: 0;
+}
+
+.footer .background img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer .text{
+    padding: 1rem 20%;
+    margin-top: -30rem;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 31px;
+    letter-spacing: 7px;
+    padding-right: 23rem;
+}
+
+.footer .text .list{
+    margin-top: 6rem;
+    word-spacing: 50px;
+}
+
+.footer .text .list a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
